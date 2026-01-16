@@ -1,0 +1,1 @@
+seq 100000 | awk '{print $1 ":message-" $1}' | kcat -P -b localhost:9092 -t test -K :

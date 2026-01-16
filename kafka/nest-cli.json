@@ -1,0 +1,38 @@
+{
+  "monorepo": true,
+  "root": "apps/kafka",
+  "sourceRoot": "apps/kafka/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/kafka/tsconfig.app.json"
+  },
+  "projects": {
+    "kafka": {
+      "type": "application",
+      "root": "apps/kafka",
+      "entryFile": "main",
+      "sourceRoot": "apps/kafka/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/kafka/tsconfig.app.json"
+      }
+    },
+    "approach_1": {
+      "type": "application",
+      "root": "apps/approach_1",
+      "entryFile": "main",
+      "sourceRoot": "apps/approach_1/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/approach_1/tsconfig.app.json"
+      }
+    },
+    "approach_2": {
+      "type": "application",
+      "root": "apps/approach_2",
+      "entryFile": "main",
+      "sourceRoot": "apps/approach_2/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/approach_2/tsconfig.app.json"
+      }
+    }
+  }
+}
